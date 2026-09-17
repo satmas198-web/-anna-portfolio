@@ -22,6 +22,10 @@
     .hero-grid .media img,.wall .media img{display:block;width:100%;height:auto;object-fit:initial;background:transparent}
     .wall .media.video-card{background:#000}.wall .media.video-card video{display:block;width:100%;height:auto;background:#000;object-fit:contain}
     @media(max-width:760px){.hero-grid,.wall,.wall.nowing,.wall.win,.wall.kennel,.wall.texts{columns:2;column-gap:8px}.hero-grid .media,.wall .media{margin-bottom:8px}}
+    /* WinTech: две афиши рядом, без обрезки. */
+    .wall.win{display:grid;columns:auto;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+    .wall.win .media{margin:0}
+
   </style>
 </head>
 <body>
